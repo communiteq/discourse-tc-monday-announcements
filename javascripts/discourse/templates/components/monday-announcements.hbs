@@ -1,0 +1,17 @@
+
+{{#if mustShow}}
+<div class="monday-announcements">
+    {{#each announcement_topics as |topic index|}}
+        <div class="monday-announcement">
+            <a href="/t/{{topic.slug}}/{{topic.id}}">
+                <div class="announcement-title">
+                    {{topic.fancy_title}}
+                </div>
+                <div class="announcement-excerpt">
+                    {{topic.excerpt}}
+                </div>
+            </a>
+        </div>
+    {{/each}}
+</div>
+{{/if}}

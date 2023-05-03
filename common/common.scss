@@ -1,4 +1,4 @@
-.roadmap-numbers {
+.monday-announcements {
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
@@ -6,34 +6,24 @@
     flex-direction: row;
     column-gap: 20px;
 
-    .roadmap-number.released {
-        background-color: #e2f0e7;
-        .count {
-            color: #00ca72;
-        }
-    }
-    .roadmap-number.on-roadmap {
-        background-color: #ECEFF8;
-        .count {
-            color: #6161ff;
-        }
-    }
-    .roadmap-number.under-consideration {
-        background-color: #FFF5CC;
-        .count {
-            color: #caa100;
-        }
-    }
+    .monday-announcement {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 33.333%;
 
-    .roadmap-number {
         border-radius: 4px;
         flex: 1;
         padding: 20px;
         text-align: center;
+        background-color: #ECEFF8;
 
-        .count {
-            font-size: 20px;
-            font-weight: bold;
+        .announcement-title {
+            color: #6161ff;
+            font-size: 1.2em;
+            padding-bottom: 1em;
+        }
+        .announcement-excerpt {
+            color: #000;
         }
     }
 }

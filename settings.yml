@@ -1,0 +1,10 @@
+announcements_category_slug:
+  type: string
+  default: ""
+  description: 
+    en: 'Category slug to show the announcements on.'
+announcements_tag_name:
+  type: string
+  default: "announcement"
+  description: 
+    en: 'Tag names to select the announcements from.'
