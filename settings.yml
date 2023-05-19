@@ -3,8 +3,9 @@ announcements_category_slug:
   default: ""
   description: 
     en: 'Category slug to show the announcements on.'
-announcements_tag_name:
-  type: string
-  default: "announcement"
-  description: 
-    en: 'Tag names to select the announcements from.'
+announcements_topics:
+  default: >-
+    [{"title":"Discover the power of monday AI","excerpt":"Learn all about our soon-to-be-released AI capabilities! join us for another LIVE community event","id":"58567"},
+    {"title":"Community New Features Webinar (May 24th)","excerpt":"Join the community on May 24th to learn all about the newest monday.com features","id":"58544"},
+    {"title":"Introducing Dashboard Hub on the monday.com Marketplace","excerpt":"Dashboard Hub, a new addition to the monday.com 6 marketplace developed by Appfire after reading some of your suggestions.","id":"58312"}]
+  json_schema: '{ "type": "array", "format": "table", "uniqueItems": true, "items": { "type": "object", "properties": { "title": { "type": "string", "minLength": 1 }, "excerpt": { "type": "string", "minLength": 1 }, "id": { "type": "string" } }, "additionalProperties": false } }'

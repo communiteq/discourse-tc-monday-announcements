@@ -3,9 +3,9 @@
 <div class="monday-announcements">
     {{#each announcement_topics as |topic index|}}
         <div class="monday-announcement">
-            <a href="/t/{{topic.slug}}/{{topic.id}}">
+            <a href="/t/-/{{topic.id}}">
                 <div class="announcement-title">
-                    {{topic.fancy_title}}
+                    {{topic.title}}
                 </div>
                 <div class="announcement-excerpt">
                     {{topic.excerpt}}
