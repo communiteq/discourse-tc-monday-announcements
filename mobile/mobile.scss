@@ -1,10 +1,20 @@
 .monday-announcements {
-    flex-direction: column;
+    overflow-x: scroll;
     padding: 10px;
     row-gap: 10px;
     
     .monday-announcement {
-        width: 90%;
+        line-height: 150%;
+        min-width: 304px;
+        padding: 31px 6px 25px 8px;
+        .announcement-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .announcement-excerpt {
+            font-size: 16px;
+            font-weight: 400;
+        }
     }
 }
 
